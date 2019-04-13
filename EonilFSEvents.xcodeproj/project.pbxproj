@@ -15,6 +15,15 @@
 		4513D3C621D530300070A7A5 /* EonilFSEventStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4513D3BE21D530300070A7A5 /* EonilFSEventStream.swift */; };
 		4513D3C721D530300070A7A5 /* EonilFSEventStreamCreateFlags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4513D3BF21D530300070A7A5 /* EonilFSEventStreamCreateFlags.swift */; };
 		4513D3C821D530300070A7A5 /* EonilFSEventStreamEventID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4513D3C021D530300070A7A5 /* EonilFSEventStreamEventID.swift */; };
+		517408FC2260FCA600C3F8D4 /* EonilFsEventsFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 517408FA2260FCA600C3F8D4 /* EonilFsEventsFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		517409042260FFCD00C3F8D4 /* EonilFSEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4513D3BB21D530300070A7A5 /* EonilFSEvents.swift */; };
+		517409052260FFCD00C3F8D4 /* EonilFSEventStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4513D3BE21D530300070A7A5 /* EonilFSEventStream.swift */; };
+		517409062260FFCD00C3F8D4 /* EonilFSEventStreamCreateFlags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4513D3BF21D530300070A7A5 /* EonilFSEventStreamCreateFlags.swift */; };
+		517409072260FFCD00C3F8D4 /* EonilFSEventStreamError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4513D3B921D530300070A7A5 /* EonilFSEventStreamError.swift */; };
+		517409082260FFCD00C3F8D4 /* EonilFSEventStreamEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4513D3BD21D530300070A7A5 /* EonilFSEventStreamEvent.swift */; };
+		517409092260FFCD00C3F8D4 /* EonilFSEventStreamEventFlags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4513D3BA21D530300070A7A5 /* EonilFSEventStreamEventFlags.swift */; };
+		5174090A2260FFCD00C3F8D4 /* EonilFSEventStreamEventID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4513D3C021D530300070A7A5 /* EonilFSEventStreamEventID.swift */; };
+		5174090B2260FFCD00C3F8D4 /* EonilFSEventStreamIllogicalErrorLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4513D3BC21D530300070A7A5 /* EonilFSEventStreamIllogicalErrorLog.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,10 +38,20 @@
 		4513D3C021D530300070A7A5 /* EonilFSEventStreamEventID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EonilFSEventStreamEventID.swift; sourceTree = "<group>"; };
 		4513D3C921D531DD0070A7A5 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 		4513D3CA21D531DD0070A7A5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		517408F82260FCA600C3F8D4 /* EonilFsEventsFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EonilFsEventsFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		517408FA2260FCA600C3F8D4 /* EonilFsEventsFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EonilFsEventsFramework.h; sourceTree = "<group>"; };
+		517408FB2260FCA600C3F8D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		4513D3AB21D52FC50070A7A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		517408F52260FCA600C3F8D4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -48,7 +67,9 @@
 				4513D3C921D531DD0070A7A5 /* LICENSE.md */,
 				4513D3CA21D531DD0070A7A5 /* README.md */,
 				4513D3AF21D52FC50070A7A5 /* Sources */,
+				517408F92260FCA600C3F8D4 /* EonilFsEventsFramework */,
 				4513D3AE21D52FC50070A7A5 /* Products */,
+				517409002260FCB000C3F8D4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				4513D3AD21D52FC50070A7A5 /* libEonilFSEvents.a */,
+				517408F82260FCA600C3F8D4 /* EonilFsEventsFramework.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -75,6 +97,22 @@
 			path = Sources;
 			sourceTree = "<group>";
 		};
+		517408F92260FCA600C3F8D4 /* EonilFsEventsFramework */ = {
+			isa = PBXGroup;
+			children = (
+				517408FA2260FCA600C3F8D4 /* EonilFsEventsFramework.h */,
+				517408FB2260FCA600C3F8D4 /* Info.plist */,
+			);
+			path = EonilFsEventsFramework;
+			sourceTree = "<group>";
+		};
+		517409002260FCB000C3F8D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -82,6 +120,14 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		517408F32260FCA600C3F8D4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				517408FC2260FCA600C3F8D4 /* EonilFsEventsFramework.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +151,24 @@
 			productReference = 4513D3AD21D52FC50070A7A5 /* libEonilFSEvents.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		517408F72260FCA600C3F8D4 /* EonilFsEventsFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 517408FF2260FCA600C3F8D4 /* Build configuration list for PBXNativeTarget "EonilFsEventsFramework" */;
+			buildPhases = (
+				517408F32260FCA600C3F8D4 /* Headers */,
+				517408F42260FCA600C3F8D4 /* Sources */,
+				517408F52260FCA600C3F8D4 /* Frameworks */,
+				517408F62260FCA600C3F8D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EonilFsEventsFramework;
+			productName = EonilFsEventsFramework;
+			productReference = 517408F82260FCA600C3F8D4 /* EonilFsEventsFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -117,6 +181,9 @@
 					4513D3AC21D52FC50070A7A5 = {
 						CreatedOnToolsVersion = 10.1;
 						LastSwiftMigration = 1010;
+					};
+					517408F72260FCA600C3F8D4 = {
+						CreatedOnToolsVersion = 10.2;
 					};
 				};
 			};
@@ -133,9 +200,20 @@
 			projectRoot = "";
 			targets = (
 				4513D3AC21D52FC50070A7A5 /* EonilFSEvents */,
+				517408F72260FCA600C3F8D4 /* EonilFsEventsFramework */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		517408F62260FCA600C3F8D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4513D3AA21D52FC50070A7A5 /* Sources */ = {
@@ -150,6 +228,21 @@
 				4513D3C821D530300070A7A5 /* EonilFSEventStreamEventID.swift in Sources */,
 				4513D3C721D530300070A7A5 /* EonilFSEventStreamCreateFlags.swift in Sources */,
 				4513D3C321D530300070A7A5 /* EonilFSEvents.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		517408F42260FCA600C3F8D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				517409072260FFCD00C3F8D4 /* EonilFSEventStreamError.swift in Sources */,
+				517409062260FFCD00C3F8D4 /* EonilFSEventStreamCreateFlags.swift in Sources */,
+				517409092260FFCD00C3F8D4 /* EonilFSEventStreamEventFlags.swift in Sources */,
+				517409082260FFCD00C3F8D4 /* EonilFSEventStreamEvent.swift in Sources */,
+				5174090A2260FFCD00C3F8D4 /* EonilFSEventStreamEventID.swift in Sources */,
+				517409042260FFCD00C3F8D4 /* EonilFSEvents.swift in Sources */,
+				5174090B2260FFCD00C3F8D4 /* EonilFSEventStreamIllogicalErrorLog.swift in Sources */,
+				517409052260FFCD00C3F8D4 /* EonilFSEventStream.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,7 +300,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -260,7 +353,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -302,6 +395,68 @@
 			};
 			name = Release;
 		};
+		517408FD2260FCA600C3F8D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = XK44TD8U4S;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = EonilFsEventsFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bigbearlabs.EonilFsEventsFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		517408FE2260FCA600C3F8D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = XK44TD8U4S;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = EonilFsEventsFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bigbearlabs.EonilFsEventsFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -319,6 +474,15 @@
 			buildConfigurations = (
 				4513D3B721D52FC50070A7A5 /* Debug */,
 				4513D3B821D52FC50070A7A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		517408FF2260FCA600C3F8D4 /* Build configuration list for PBXNativeTarget "EonilFsEventsFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				517408FD2260FCA600C3F8D4 /* Debug */,
+				517408FE2260FCA600C3F8D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
